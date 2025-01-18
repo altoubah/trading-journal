@@ -1,0 +1,54 @@
+/* Example Dark Theme overrides */
+
+/* We'll rely on Bootstrap classes but override with dark colors */
+
+:root {
+    --color-bg: #131418; /* Dark background akin to Framer's vibe */
+    --color-bg-secondary: #1b1d23; /* Slightly lighter dark for cards */
+    --color-text: #f8f9fa; /* near-white text */
+    --color-accent: #38f; /* a neon-ish accent color, e.g. #38f (bright bluish) */
+    --color-accent-hover: #36d; /* slightly darker hover state */
+  
+    --color-card-bg: #1b1d23;
+    --color-card-border: #2c2f36;
+    --color-heading: #fff;
+  }
+  
+  /* Global body override */
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: var(--color-card-bg) !important;
+    border: 1px solid var(--color-card-border) !important;
+    color: var(--color-text) !important;
+  }
+  
+  /* Navbar Dark Override */
+  .navbar-dark.bg-dark {
+    background-color: var(--color-bg-secondary) !important;
+    color: var(--color-text);
+  }
+  
+  /* Buttons */
+  .btn-accent {
+    background-color: var(--color-accent);
+    border: none;
+  }
+  .btn-accent:hover {
+    background-color: var(--color-accent-hover);
+  }
+  
+  .text-primary {
+    color: var(--color-accent) !important;
+  }
+  
+  /* For headings if you want them extra bright */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-heading);
+  }
+  

@@ -1,0 +1,5 @@
+node_moudles/
+.DS_store
+.env
+build/
+dist/
